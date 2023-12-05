@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ninja.ai</title>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+  <script src="https://kit.fontawesome.com/2acd488f7a.js" defer="defer" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+  <style>
+    .el{
+      background: url("/ninja.webp");
+      background-size: cover;
+      border-radius: 5rem;
+      mask-image: paint(smooth-corners);
+
+    }
+    @supports (mask-image: paint(smooth-corners)) {
+      .el.is-loaded {
+        border-radius: 0;
+        mask-image: paint(smooth-corners);
+        --smooth-corners:  4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w-screen h-screen flex items-center justify-center bg-[#E6F1FE]">
+    <div  class="el w-96 h-96  shadow-2xl border-4 border-[#97B4C1]"></div>
+  </div>
+</body>
+
+</html>

@@ -5,19 +5,21 @@
   <meta charset="utf-8">
   <title>Ninja.ai</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     .el{
       background: url("/ninja.webp");
       background-size: cover;
       border-radius: 5rem;
-      mask-image: paint(smooth-corners);
+      /* mask-image: paint(smooth-corners); */
 
     }
-
-    .el.is-loaded {
-      border-radius: 0;
-      mask-image: paint(smooth-corners);
-      --smooth-corners:  4rem;
+    @supports (mask-image: paint(smooth-corners)) {
+      .el.is-loaded {
+        border-radius: 0;
+        mask-image: paint(smooth-corners);
+        --smooth-corners:  4rem;
+      }
     }
   </style>
 </head>

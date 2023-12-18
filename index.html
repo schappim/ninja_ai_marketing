@@ -13,12 +13,11 @@
       mask-image: paint(smooth-corners);
 
     }
-    @supports (mask-image: paint(smooth-corners)) {
-      .el.is-loaded {
-        border-radius: 0;
-        mask-image: paint(smooth-corners);
-        --smooth-corners:  4rem;
-      }
+
+    .el.is-loaded {
+      border-radius: 0;
+      mask-image: paint(smooth-corners);
+      --smooth-corners:  4rem;
     }
   </style>
 </head>
